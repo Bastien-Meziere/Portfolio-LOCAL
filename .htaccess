@@ -1,0 +1,21 @@
+AddDefaultCharset UTF-8
+
+## INTERDIT L'ACCÈS AU FICHIER .HTACCESS
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>
+
+## Mettre le serveur sur le fuseau horaire de Paris
+SetEnv TZ Europe/Paris
+
+## METTRE PAR DÉFAUT L'AFFICHAGE
+<FilesMatch "\.(htm|html|css|js|php)$">
+    AddDefaultCharset UTF-8
+    DefaultLanguage fr-FR
+</FilesMatch>
+
+# On autorise de renommer les pages
+Options +FollowSymLinks -MultiViews
+RewriteEngine ON
+RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.php?p=$1
