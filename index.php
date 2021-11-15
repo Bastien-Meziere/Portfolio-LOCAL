@@ -19,40 +19,43 @@
     <body>
         <!-- Partie Navigation -->
         <header id="accueil">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-lg navbar-fixed-top">
-                            <div class=" navbar-collapse">
-                                <ul class="navbar-nav m-auto">
-                                    <li class="nav-item"><a href="#accueil" class="txt-nav">Accueil</a></li>
-                                    <li class="nav-item"><a href="#propos" class="txt-nav">A propos</a></li>
-                                    <li class="nav-item"><a href="#projets" class="txt-nav">Projets</a></li>
-                                    <li class="nav-item"><a href="#contact" class="txt-nav">Contact</a></li>
-                                </ul>
-                                <div class="menu-btn">
-                                    <i class="fas fa-bars"></i>
-                                </div>
-                            </div>
-                        </nav>
+            <div class="area" >
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <nav class="navbar navbar-expand-lg navbar-fixed-top">
+                    <div class=" navbar-collapse">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item"><a href="#accueil" class="txt-nav">Accueil</a></li>
+                            <li class="nav-item"><a href="#propos" class="txt-nav">A propos</a></li>
+                            <li class="nav-item"><a href="#projets" class="txt-nav">Projets</a></li>
+                            <li class="nav-item"><a href="#contact" class="txt-nav">Contact</a></li>
+                        </ul>
+                        <div class="menu-btn">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 context">
+                            <span is="type-async" id="type-text">...</span>
+                            <span class="blinking-cursor">_</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
         <!-- Partie Accueil -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h1 class="titre-block1">Bastien Mézière</h1>
-                    <h2 class="soustitre-block1">Développeur Web</h2>
-                </div>
-                <div class="col-lg-2">
-                    <figure class="img-absolute">
-                        <img class="img-fluid" src="asset/image/PhotoCV.jpg" alt="Photo de Bastien">
-                    </figure>
-                </div>
-            </div>
-        </div>
         <main>
         <!-- Partie A Propos -->
         <section id="propos" class="section-propos">
@@ -62,11 +65,14 @@
                         <h2 class="titresection block_title">A Propos</h2>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="forme-propos">
-                                    <img class="photo-propos" src="asset/image/PhotoCV.jpg" alt="">
+                                    <img src="asset/image/about_img.svg" alt="">
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="forme-propos2">
+                                    <p class="p-propos">Bonjour, je m'appelle Bastien, j'ai 21 ans et je suis développeur web.</p>
+                                    <p class="p-propos">Je suis une personne organisée et à l'écoute dans tout ce que j'entreprends. Je peux également apporter de nouvelles idées.</p>
+                                    <p class="p-propos">J'ai pour projet de faire une licence professionnelle "Développeur et Intégrateur Web Applications" en alternance sur Laval au cours de l'année 2022/2023. Mais je suis également ouvert pour un emploi de type CDI/CDD/INTERIM.</p>
                                 </div>
                             </div>
                     </div>
@@ -194,11 +200,8 @@
     </div>
     <!-- Partie Footer -->
     <footer>
-        <div class="container">
-            <p class="primary-color txt-center">Bastien Mézière &copy;<script>document.write(new Date().getFullYear());</script> - Tout droits réservés - <a href="">CGU</a></p>
-            <div class="social-btns">
-                <a href="https://github.com/Bastien-Meziere" target="_blank" class="btn-github flex-center"><i class="fab fa-github fa-3x"></i></a>
-            </div>
+        <div class="container-fluid">
+            <p class="txt-footer">Bastien Mézière &copy;<script>document.write(new Date().getFullYear());</script> - Tout droits réservés - <a href="https://github.com/Bastien-Meziere" target="_blank" class="btn-github"><i class="fab fa-github fa-3x"></i></a></p>
         </div>
     </footer>
     </div>
