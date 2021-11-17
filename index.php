@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -14,10 +17,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="asset/css/style.css">
         <link rel="icon" type="image/ico" href="asset/image/favicon.png">
-        <!-- Mettre un script google reCaptcha pour le formulaire de contact -->
+        <script src="https://www.google.com/recaptcha/api.js?render=6LfN_lYcAAAAABzg1rl1JAlyVfGSbOHqYrMHYAjK"></script>
+        <script>
+        grecaptcha.ready(function() {
+        grecaptcha.execute('6LfN_lYcAAAAABzg1rl1JAlyVfGSbOHqYrMHYAjK', {action: 'homepage'}).then(function(token) {
+            document.getElementById('recaptchaResponse').value = token
+        });
+        });
+        </script>
     </head>
     <body>
-        <!-- Partie Navigation -->
+        <!-- Partie Header -->
         <header id="accueil">
             <div class="area" >
                 <ul class="circles">
@@ -32,17 +42,17 @@
                     <li></li>
                     <li></li>
                 </ul>
-                <nav class="navbar navbar-expand-lg navbar-fixed-top">
-                    <div class=" navbar-collapse">
+                <nav class="navbar navbar-expand-md navbar-fixed-top">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="nav">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item"><a href="#accueil" class="txt-nav">Accueil</a></li>
                             <li class="nav-item"><a href="#propos" class="txt-nav">A propos</a></li>
                             <li class="nav-item"><a href="#projets" class="txt-nav">Projets</a></li>
                             <li class="nav-item"><a href="#contact" class="txt-nav">Contact</a></li>
                         </ul>
-                        <div class="menu-btn">
-                            <i class="fas fa-bars"></i>
-                        </div>
                     </div>
                 </nav>
                 <div class="container-fluid">
@@ -55,7 +65,6 @@
                 </div>
             </div>
         </header>
-        <!-- Partie Accueil -->
         <main>
         <!-- Partie A Propos -->
         <section id="propos" class="section-propos">
@@ -63,7 +72,7 @@
                 <div class="container">
                     <div class="row">
                         <h2 class="titresection block_title">A Propos</h2>
-                            <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="col-md-6 col-sm-12 col-xs-12 m-bottom50">
                                 <div class="forme-propos">
                                     <img src="asset/image/about_img.svg" alt="">
                                 </div>
@@ -165,8 +174,13 @@
         </section>
         <!-- Partie Contact -->
         <section id="contact" class="section-contact">
-            <div class="container block4">
+            <div class="container">
                     <h2 class="titresection block_title">Me Contacter</h2>
+                    <?php if(array_key_exists('success', $_SESSION)): ?>
+                        <div class="alert succes">
+                            Votre message a bien été envoyé
+                        </div>
+                    <?php endif; ?>
                     <form class="row" method="POST" action="mail/contact.php">
                         <div class="col-md-12">
                             <input id="nom" class="form-control input-nom" type="text" placeholder="Nom" required>
@@ -212,3 +226,6 @@
     </body>
 
 </html>
+<?php
+  unset($_SESSION['success']);
+?>
