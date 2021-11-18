@@ -78,7 +78,7 @@ form {
 .titresection {
     color: #fff;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 165px;
     font-family: 'Coiny', cursive;
     font-size: 4.5vh;
@@ -297,12 +297,13 @@ form {
     width: 90%;
     height: 460px;
     border: 5px solid #F7B32B;
+    background: #fff;
     padding: 15px;
 }
 /* Forme couleur bordeaux */
 .forme-propos2 {
     width: 100%;
-    height: 600px;
+    height: 100%;
     background: #750D37;
     border: 5px dashed #fff;
     padding: 40px;
