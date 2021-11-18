@@ -80,7 +80,7 @@
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="forme-propos2">
                                     <p class="p-propos">Bonjour, je m'appelle Bastien, j'ai 21 ans et je suis développeur web.</p>
-                                    <p class="p-propos">Je suis une personne organisée et à l'écoute dans tout ce que j'entreprends. Je peux également apporter de nouvelles idées.</p>
+                                    <p class="p-propos">Dans la vie je suis une personne organisée et à l'écoute dans tout ce que j'entreprends. Je peux également apporter de nouvelles idées dans différents projets.</p>
                                     <p class="p-propos">J'ai pour projet de faire une licence professionnelle "Développeur et Intégrateur Web Applications" en alternance sur Laval au cours de l'année 2022/2023. Mais je suis également ouvert pour un emploi de type CDI/CDD/INTERIM.</p>
                                 </div>
                             </div>
