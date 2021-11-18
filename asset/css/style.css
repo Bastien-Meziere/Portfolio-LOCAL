@@ -74,6 +74,9 @@ form {
 .m-bottom150 {
     margin-bottom: 150px;
 }
+.pad-20 {
+    padding: 20px;
+}
 /* Titre pour chaque section */
 .titresection {
     color: #fff;

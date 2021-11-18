@@ -95,7 +95,7 @@
                     <div class="col-12">
                         <h2 class="titreprojets">Projets</h2>
                     </div>
-                    <div class="row m-bottom150">
+                    <div class="row m-bottom150 pad-20">
                         <div class="col-md-4 col-sm-6 col-xs-12 card-space">
                             <a href="https://github.com/Bastien-Meziere/ESB-TDT-LOCAL" target="_blank">
                                 <div class="card">
