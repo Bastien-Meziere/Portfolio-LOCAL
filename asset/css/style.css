@@ -81,15 +81,13 @@ form {
     margin-top: 50px;
     margin-bottom: 165px;
     font-family: 'Coiny', cursive;
-    font-size: 43px;
+    font-size: 4.5vh;
 }
 
 .block_title {
-    font-size: 4em;
     font-weight: 300;
     text-align: center;
     overflow: hidden;
-    margin-bottom: 70px;
 }
 
 .block_title:before,.block_title:after {
@@ -324,9 +322,9 @@ form {
     text-align: center;
     margin-top: 70px;
     margin-bottom: 100px;
-    padding-top: 50px;
+    padding-top: 130px;
     font-family: 'Coiny', cursive;
-    font-size: 43px;
+    font-size: 4.5vh;
     text-shadow: 0px 0px 8px #001021;
 }
 /* Fond jaune */
