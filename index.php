@@ -20,7 +20,7 @@
         <script src="https://www.google.com/recaptcha/api.js?render=6LfN_lYcAAAAABzg1rl1JAlyVfGSbOHqYrMHYAjK"></script>
         <script>
         grecaptcha.ready(function() {
-        grecaptcha.execute('6LfN_lYcAAAAABzg1rl1JAlyVfGSbOHqYrMHYAjK', {action: 'homepage'}).then(function(token) {
+        grecaptcha.execute('6LeOBWIdAAAAACEnhOZKj9RKGA9wEKEalsgOPhZh', {action: 'homepage'}).then(function(token) {
             document.getElementById('recaptchaResponse').value = token
         });
         });
@@ -42,11 +42,13 @@
                     <li></li>
                     <li></li>
                 </ul>
-                <nav class="navbar navbar-expand-md navbar-fixed-top">
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="nav">
+                <nav class="navbar navbar-expand-md">
+                    <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>-->
+                    <div class="collapse navbar-collapse" id="toggleMobileMenu">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item"><a href="#accueil" class="txt-nav">Accueil</a></li>
                             <li class="nav-item"><a href="#propos" class="txt-nav">A propos</a></li>
