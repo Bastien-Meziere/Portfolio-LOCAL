@@ -17,7 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="asset/css/style.css">
         <link rel="icon" type="image/ico" href="asset/image/favicon.png">
-        <script src="https://www.google.com/recaptcha/api.js?render=6LfN_lYcAAAAABzg1rl1JAlyVfGSbOHqYrMHYAjK"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=6LeOBWIdAAAAACEnhOZKj9RKGA9wEKEalsgOPhZh"></script>
         <script>
         grecaptcha.ready(function() {
         grecaptcha.execute('6LeOBWIdAAAAACEnhOZKj9RKGA9wEKEalsgOPhZh', {action: 'homepage'}).then(function(token) {
