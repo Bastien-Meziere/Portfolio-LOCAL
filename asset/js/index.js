@@ -48,3 +48,42 @@ async delete (text) {
 customElements.define('type-async', TypeAsync, { extends: 'span' })
 
 init()
+
+/* Fonction qui permet d'animer le forme-propos lors du scroll vers le bas */
+const slidingFormePropos = document.querySelector('.forme-propos')
+
+window.addEventListener('scroll', () => {
+    const {scrollTop, clientHeight} = document.documentElement;
+
+    const topElementToTopViewport = slidingFormePropos.getBoundingClientRect().top;
+
+    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.77) {
+        slidingFormePropos.classList.add('active')
+    }
+})
+
+/* Fonction qui permet d'animer le forme-propos2 lors du scroll vers le bas */
+const slidingFormePropos2 = document.querySelector('.forme-propos2')
+
+window.addEventListener('scroll', () => {
+    const {scrollTop, clientHeight} = document.documentElement;
+
+    const topElementToTopViewport = slidingFormePropos2.getBoundingClientRect().top;
+
+    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.77) {
+        slidingFormePropos2.classList.add('active')
+    }
+})
+
+/* Fonction qui permet d'animer le formulaire de contact lors du scroll vers le bas */
+const slidingForm = document.querySelector('form')
+
+window.addEventListener('scroll', () => {
+    const {scrollTop, clientHeight} = document.documentElement;
+
+    const topElementToTopViewport = slidingForm.getBoundingClientRect().top;
+
+    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.10) {
+        slidingForm.classList.add('active')
+    }
+})
