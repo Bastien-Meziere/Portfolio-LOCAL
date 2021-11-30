@@ -76,7 +76,7 @@
                         <h2 class="titresection block_title">A Propos</h2>
                             <div class="col-md-6 col-sm-12 col-xs-12 m-bottom50">
                                 <div class="forme-propos">
-                                    <img src="asset/image/about_img.svg" alt="">
+                                    <img src="asset/image/about_img.svg" alt="Dessin cartoon d'une personne assise sur une table avec un ordinateur à côté">
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
