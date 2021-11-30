@@ -185,16 +185,16 @@
                     <?php endif; ?>
                     <form class="row" method="POST" action="mail/contact.php">
                         <div class="col-md-12">
-                            <input id="nom" class="form-control input-nom" type="text" placeholder="Nom" required>
+                            <input id="nom" name="nom" class="form-control input-nom" type="text" placeholder="Nom" required>
                         </div>
                         <div class="col-md-6">
-                                <input id="email" class="form-control input-reste" type="text" placeholder="E-Mail" required>
+                                <input id="email" name="email" class="form-control input-reste" type="text" placeholder="E-Mail" required>
                         </div>
                         <div class="col-md-6">
-                                <input id="tel" class="form-control input-reste" type="text" placeholder="Téléphone" required>
+                                <input id="tel" name="tel" class="form-control input-reste" type="text" placeholder="Téléphone" required>
                         </div>
                         <div class="col-md-12">
-                            <textarea id="message" class="form-control input-reste" placeholder="Message" required></textarea>
+                            <textarea id="message" name="message" class="form-control input-reste" placeholder="Message" required></textarea>
                         </div>
                             <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
                         <div class="col-xs-12">
