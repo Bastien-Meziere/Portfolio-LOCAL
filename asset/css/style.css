@@ -571,6 +571,19 @@ form.active {
     font-size: 19px;
     font-weight: 600;
 }
+/* Message success quand on envoie un message via le formulaire de contact */
+.succes {
+    background-color: #00A878;
+    color: #001021;
+    font-family: 'Oswald';
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-top: -60px;
+    margin-bottom: 100px;
+}
 
 /* Section Footer */
 
