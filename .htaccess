@@ -19,3 +19,25 @@ SetEnv TZ Europe/Paris
 Options +FollowSymLinks -MultiViews
 RewriteEngine ON
 RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.php?p=$1
+
+# NE PAS OUBLIER D'ENLEVER LES # pour forcer le WWW (Pb en localhost)
+# Permet de rediriger http://test.fr en http://www.test.fr
+
+# Condition : Si dans l'URL il n'y a pas www
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+# Règle qui redirige http://nomdedomaine.fr vers http://www.nomdedomaine.fr
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# Redirection HTTP vers HTTPS
+
+# Condition : Si HTTPS n'est pas activé
+RewriteCond %{HTTPS} off
+# Règle qui redirige HTTP vers HTTPS
+RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Sauf répertoire, supprime la barre oblique finale 
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/$ http://%{HTTP_HOST}/$1 [R=301,L]
+
+ErrorDocument 404 https://www.meziere-dev.ovh/404.html
