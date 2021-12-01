@@ -605,6 +605,23 @@ form.active {
     transition-duration: 0.2s;
 }
 
+/* Page Erreur 404 */
+
+/* Fond Erreur 404 */
+.fond-erreur {
+    height: 50vh;
+}
+/* Titre Erreur 404 */
+.erreur {
+    text-align: center;
+    color: #F7B32B;
+    font-size: 8vh;
+    font-weight: bold;
+    font-family: 'Coiny', cursive;
+    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+    transform: translateY(-50%);
+}
+
 /* Loader */
 .loader-container {
     position: fixed;
