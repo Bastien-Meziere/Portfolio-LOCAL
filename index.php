@@ -20,7 +20,7 @@
         <script src="https://www.google.com/recaptcha/api.js?render=6LfN_lYcAAAAABzg1rl1JAlyVfGSbOHqYrMHYAjK"></script>
         <script>
         grecaptcha.ready(function() {
-        grecaptcha.execute('6LfN_lYcAAAAABzg1rl1JAlyVfGSbOHqYrMHYAjK', {action: 'homepage'}).then(function(token) {
+        grecaptcha.execute('6LeOBWIdAAAAACEnhOZKj9RKGA9wEKEalsgOPhZh', {action: 'homepage'}).then(function(token) {
             document.getElementById('recaptchaResponse').value = token
         });
         });
@@ -30,23 +30,13 @@
         <!-- Partie Header -->
         <header id="accueil">
             <div class="area" >
-                <ul class="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <nav class="navbar navbar-expand-md navbar-fixed-top">
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="nav">
+                <nav class="navbar navbar-expand-md">
+                    <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>-->
+                    <div class="collapse navbar-collapse" id="toggleMobileMenu">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item"><a href="#accueil" class="txt-nav">Accueil</a></li>
                             <li class="nav-item"><a href="#propos" class="txt-nav">A propos</a></li>
@@ -57,9 +47,9 @@
                 </nav>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-12 context">
-                            <span is="type-async" id="type-text">...</span>
-                            <span class="blinking-cursor">_</span>
+                        <div class="col-lg-12">
+                            <img class="codeur" src="asset/image/codeur.png" alt="Image codeur cartoon">
+                            <h1 class="context">Bastien Mézière <br>Développeur Web</h1>
                         </div>
                     </div>
                 </div>
@@ -79,11 +69,72 @@
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="forme-propos2">
-                                    <p class="p-propos">Bonjour, je m'appelle Bastien, j'ai 21 ans et je suis développeur web.</p>
+                                    <p class="p-propos">Bonjour, je m'appelle Bastien, j'ai 22 ans et je suis développeur web.</p>
                                     <p class="p-propos">Dans la vie je suis une personne organisée et à l'écoute dans tout ce que j'entreprends. Je peux également apporter de nouvelles idées dans différents projets.</p>
-                                    <p class="p-propos">J'ai pour projet de faire une licence professionnelle "Développeur et Intégrateur Web Applications" en alternance sur Laval au cours de l'année 2022/2023. Mais je suis également ouvert pour un emploi de type CDI/CDD/INTERIM.</p>
+                                    <p class="p-propos">J'ai pour projet de faire une licence professionnelle applications web parcours Développeur Web au cours de l'année 2023/2024.</p>
                                 </div>
                             </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row txt-center">
+                    <div class="col-12 bouton-propos">
+                        <button id="btn-comp" class="btn-propos">Compétence</button>
+                        <button id="btn-formation" class="btn-propos">Formation</button>
+                        <button id="btn-exp" class="btn-propos">Expérience</button>
+                    </div>
+                </div>
+            </div>
+            <div id="comp" class="container-fluid section-comp">
+                <div class="row table-responsive">
+                    <div class="col-4">
+                        <h2 class="sous-titre-comp">Langages</h2>
+                            <img src="asset/image/html.png" class="img-html" alt="Logo HTML">
+                            <img src="asset/image/css.png" class="img-comp" alt="Logo CSS">
+                            <img src="asset/image/js.png" class="img-comp" alt="Logo JAVASCRIPT">
+                    </div>
+                    <div class="col-4">
+                        <h2 class="sous-titre-comp">SGBD</h2>
+                            <img src="asset/image/mysql.png" class="img-comp" alt="Logo MySQL">
+                    </div>
+                    <div class="col-4">
+                        <h2 class="sous-titre-comp">Autres</h2>
+                            <img src="asset/image/git.png" class="img-comp" alt="Logo GIT">
+                            <img src="asset/image/seo.png" class="img-comp" alt="Logo SEO">
+                            <img src="asset/image/photoshop.png" class="img-comp" alt="Logo Photoshop">
+                            <img src="asset/image/bash_linux.png" class="img-comp" alt="Logo Bash Linux">
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="form" class="container-fluid section-form">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="liste-formation">
+                            <p><img src="asset/image/anssi.png" class="img-exp">MOOC Cybersécurité | Avril 2021<p class="second-texte-exp">En ligne, ANSSI</p></p>
+                            <div class="barre-jaune"></div>
+                            <p><img src="asset/image/univ_angers.jpg" class="img-exp">Licence pro Logiciels Libres | 2020 - 2021 (Niveau)<p class="second-texte-exp">Faculté des sciences, Angers</p></p>
+                            <div class="barre-jaune"></div>
+                            <p><img src="asset/image/rousseau.jpg" class="img-exp">BTS SIO option SLAM (Solutions logicielles et applications métiers) | 2018 - 2020<p class="second-texte-exp">Lycée Douanier Rousseau, Laval</p></p>
+                            <div class="barre-jaune"></div>
+                            <p><img src="asset/image/rousseau.jpg" class="img-exp">Baccalauréat STMG option Mercatique | 2015 - 2018<p class="second-texte-exp">Lycée Douanier Rousseau, Laval</p></p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="exp" class="container-fluid section-exp">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="liste-experience">
+                            <p><img src="asset/image/helpline.png" class="img-exp">Technicien Support Informatique - HELPLINE Angers | Février à Mai 2022<p class="second-texte-exp">Diagnostique et résolution des problèmes en hot-line</p></p>
+                            <div class="barre-jaune"></div>
+                            <p><img src="asset/image/logicia.png" class="img-exp">Développeur Web Stagiaire - LOGICIA Informatique Laval | Avril à Juillet 2021<p class="second-texte-exp">Migration de l'espace client de CakePHP 3.6 à 4.2</p></p>
+                            <div class="barre-jaune"></div>
+                            <p><img src="asset/image/esb.jpg" class="img-exp">Développeur Web Stagiaire - ES Bonchamp TDT | Janvier à Mars 2020<p class="second-texte-exp">Création Site Web en HTML/CSS/PHP/Bootstrap avec BDD</p></p>
+                            <div class="barre-jaune"></div>
+                            <p><img src="asset/image/howmet.jpg" class="img-exp">Développeur Stagiaire - HOWMET CIRAL Évron | Mai à Juin 2019<p class="second-texte-exp">Modification de formulaires Access en VBA</p></p>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -121,25 +172,25 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-6 col-xs-12 card-space">
-                            <a href="">
+                            <a href="https://github.com/Bastien-Meziere/FastQuiz" target="_blank">
                             <div class="card">
                                 <div class="imgBx">
-                                    <img src="asset/image/blanc.png" alt="Projet vide">
+                                    <img src="asset/image/fastquiz.png" alt="Projet vide">
                                 </div>
                                 <div class="details">
-                                    <h2></h2>
+                                    <h2>Appli mobile FastQuiz</h2>
                                 </div>
                             </div>
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-6 col-xs-12 card-space">
-                            <a href="">
+                            <a href="https://github.com/Bastien-Meziere/Jeu-Javascript-1" target="_blank">
                             <div class="card">
                                 <div class="imgBx">
-                                    <img src="asset/image/blanc.png" alt="Projet vide">
+                                    <img src="asset/image/jeujs.png" alt="Projet Jeu Javascript #1">
                                 </div>
                                 <div class="details">
-                                    <h2></h2>
+                                    <h2>Jeu Javascript #1</h2>
                                 </div>
                             </div>
                             </a>
@@ -208,10 +259,6 @@
             </div>
         </section>
     </main>
-    <!-- Partie Loader -->
-    <div class="loader-container">
-        <div class="loader"></div>
-    </div>
     <!-- Partie Footer -->
     <footer>
         <div class="container-fluid">
