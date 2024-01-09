@@ -258,6 +258,14 @@ form.active {
     top: -30px;
     left: -30px;
 }
+/* Bloc de texte des titres "Bastien Mézière" et "Développeur Web" */
+.bloc-texte-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 75px;
+}
 /* Image codeur cartoon */
 .codeur {
     display: block;
