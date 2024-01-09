@@ -73,3 +73,18 @@ button2.addEventListener('click', function() {
     element2.style.display = 'none';
     element3.style.display = 'block';
   });
+
+/* Animation du rond pour rediriger vers le haut de page */
+document.addEventListener('DOMContentLoaded', function() {
+    var rondAccueil = document.querySelector('.rond-accueil');
+
+    rondAccueil.addEventListener('click', function() {
+        rondAccueil.classList.add('active');
+
+        setTimeout(function() {
+            rondAccueil.classList.remove('active');
+        }, 1000);
+    });
+});
+
+
