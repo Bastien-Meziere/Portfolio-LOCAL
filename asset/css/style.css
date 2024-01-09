@@ -626,4 +626,155 @@ tr {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* Loader */
+/* Loader *//* Loader */
+@media screen and (max-width: 991px) {
+    .codeur {
+        margin-top: 20px;
+        height: 280px;
+        border-radius: 50px;
+    }
+    .bloc-texte-header {
+        align-items: center;
+        margin-top: 25px;
+    }
+    .mon-cv {
+        left: 0;
+    }
+    .forme-propos {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .titresection {
+        margin-top: 60px;
+        margin-bottom: 70px;
+    }
+    .forme-propos {
+        height: 460px;
+    }
+    ul {
+        padding-left: 0;
+    }
+    .barre-jaune {
+        width: 70vh;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .img-exp {
+        width: 30vh;
+        height: 15vh;
+    }
+    .section-projets {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+    .titreprojets {
+        margin-top: 50px;
+        margin-bottom: 60px;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 721px) {
+    .btn-propos {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .sous-titre-comp {
+        margin-top: 50px;
+    }
+    .section-projets {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+    .titreprojets {
+        margin-top: 50px;
+        margin-bottom: 60px;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .section-projets {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+    .titreprojets {
+        margin-top: 50px;
+        margin-bottom: 60px;
+        padding-top: 0px;
+    }
+    .rond-accueil {
+        margin: 10px 10px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .barre-jaune {
+        width: 50vh;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 456px) {
+    .context {
+        font-size: 6vh;
+    }
+    .context2 {
+        font-size: 4vh;
+    }
+    .forme-propos {
+        width: 100%;
+        height: 300px;
+    }
+    .btn-propos {
+        margin-top: 35px;
+    }
+    .rond-accueil {
+        margin: 7px 7px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .codeur {
+        margin-top: 40px;
+    }
+    .barre-jaune {
+        width: 30vh;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .codeur {
+        margin-top: 60px;
+        height: 250px;
+        border-radius: 40px;
+    }
+    .context {
+        font-size: 5vh;
+    }
+    .context2 {
+        font-size: 3.5vh;
+    }
+    .rond-accueil {
+        margin: 5px 5px;
+        font-size: 2.5vh;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 312px) {
+    .context {
+        font-size: 4.5vh;
+    }
+}
