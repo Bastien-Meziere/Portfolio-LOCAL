@@ -218,6 +218,46 @@ form.active {
     font-weight: 600;
     color: var(--bleu);
 }
+/* Bouton "Mon CV" */
+.mon-cv {
+    display: inline-block;
+    position: relative;
+    left: 100px;
+    border-radius: 5px;
+    border: 3px solid var(--bleu);
+    background: var(--bordeaux);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 40px;
+    color: var(--blanc);
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+    transition: color .5s;
+}
+.mon-cv:before {
+    background: var(--blanc);
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 130px;
+    width: 200px;
+    border-radius: 50%;
+}
+.mon-cv:hover {
+    color: var(--bleu);
+}
+.mon-cv:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+.mon-cv:hover::before {
+    top: -30px;
+    left: -30px;
+}
 /* Image codeur cartoon */
 .codeur {
     display: block;
