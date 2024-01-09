@@ -266,6 +266,45 @@ form.active {
     align-items: flex-start;
     margin-top: 75px;
 }
+/* Rond fixed pour revenir tout en haut de la page */
+.rond-accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    margin: 20px 20px;
+    color: var(--blanc);
+    font-size: 3vh;
+    width: 60px;
+    height: 60px;
+    background-color: var(--bordeaux);
+    opacity: 80%;
+    border-radius: 50%;
+    transition: transform 1s ease-in-out;
+}
+body .fa-solid {
+    display: flex;
+}
+.rond-accueil:hover {
+    opacity: 85%;
+}
+.rond-accueil.active {
+    animation: bounce 1s ease-in-out;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px); /* Réglez la hauteur du rebond */
+    }
+    60% {
+        transform: translateY(-15px); /* Réglez la hauteur du rebond */
+    }
+}
 /* Image codeur cartoon */
 .codeur {
     display: block;
