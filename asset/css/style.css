@@ -373,7 +373,6 @@ body .fa-solid {
 }
 
 .btn-propos {
-    width: 25vh;
     border: 3px solid var(--blanc);
     border-radius: 30px;
     background-color: var(--jaune);
