@@ -1,6 +1,3 @@
-<?php
-  session_start();
-?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -9,22 +6,26 @@
         <title>Portfolio - Bastien Mézière</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Coiny&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Mina&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="asset/css/style.css">
         <link rel="icon" type="image/ico" href="asset/image/favicon.png">
-        <script src="https://www.google.com/recaptcha/api.js?render=6LfN_lYcAAAAABzg1rl1JAlyVfGSbOHqYrMHYAjK"></script>
+        <!--<script src="https://www.google.com/recaptcha/api.js?render=6LfN_lYcAAAAABzg1rl1JAlyVfGSbOHqYrMHYAjK"></script>
         <script>
         grecaptcha.ready(function() {
         grecaptcha.execute('6LeOBWIdAAAAACEnhOZKj9RKGA9wEKEalsgOPhZh', {action: 'homepage'}).then(function(token) {
             document.getElementById('recaptchaResponse').value = token
         });
         });
-        </script>
+        </script>-->
+        <script src="https://kit.fontawesome.com/aec9cf2f24.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!-- Partie Header -->
@@ -46,13 +47,18 @@
                     </div>
                 </nav>
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <img class="codeur" src="asset/image/codeur.png" alt="Image codeur cartoon">
-                            <h1 class="context">Bastien Mézière <br>Développeur Web</h1>
+                    <div class="row mt-5">
+                        <div class="col-lg-6">
+                            <img class="codeur" src="asset/image/PhotoCV.jpg" alt="Photo de profil">
+                        </div>
+                        <div class="bloc-texte-header col-lg-6">
+                            <h1 class="context">Bastien Mézière</h1>
+                            <h2 class="context2 mb-5">Développeur Web</h2>
+                            <a class="mon-cv" href="asset/image/CV_Bastien_MEZIERE_DevWeb.pdf" target="_blank">Mon CV</a>
                         </div>
                     </div>
                 </div>
+                <a href="#accueil"><i class="fa-solid fa-arrow-up rond-accueil"></i></a>
             </div>
         </header>
         <main>
@@ -69,9 +75,9 @@
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="forme-propos2">
-                                    <p class="p-propos">Bonjour, je m'appelle Bastien, j'ai 22 ans et je suis développeur web.</p>
+                                    <p class="p-propos">Bonjour, je m'appelle Bastien, j'ai 23 ans et je suis étudiant en développement web.</p>
                                     <p class="p-propos">Dans la vie je suis une personne organisée et à l'écoute dans tout ce que j'entreprends. Je peux également apporter de nouvelles idées dans différents projets.</p>
-                                    <p class="p-propos">J'ai pour projet de faire une licence professionnelle applications web parcours Développeur Web au cours de l'année 2023/2024.</p>
+                                    <p class="p-propos">J'ai pour projet de travailler dans le développement web côté Front-End en alliant Figma et langages Front-End (HTML, CSS, JS, etc)</p>
                                 </div>
                             </div>
                     </div>
@@ -88,21 +94,22 @@
             </div>
             <div id="comp" class="container-fluid section-comp">
                 <div class="row table-responsive">
-                    <div class="col-4">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
                         <h2 class="sous-titre-comp">Langages</h2>
                             <img src="asset/image/html.png" class="img-html" alt="Logo HTML">
                             <img src="asset/image/css.png" class="img-comp" alt="Logo CSS">
                             <img src="asset/image/js.png" class="img-comp" alt="Logo JAVASCRIPT">
+                            <img src="asset/image/bootstrap.svg" class="img-comp" alt="Logo Bootstrap">
                     </div>
-                    <div class="col-4">
-                        <h2 class="sous-titre-comp">SGBD</h2>
-                            <img src="asset/image/mysql.png" class="img-comp" alt="Logo MySQL">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <h2 class="sous-titre-comp">WebDesign</h2>
+                            <img src="asset/image/figma.svg" class="img-comp" alt="Logo Figma">
+                            <img src="asset/image/photoshop.svg" class="img-comp" alt="Logo Photoshop">
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
                         <h2 class="sous-titre-comp">Autres</h2>
-                            <img src="asset/image/git.png" class="img-comp" alt="Logo GIT">
+                            <img src="asset/image/git.svg" class="img-comp" alt="Logo GIT">
                             <img src="asset/image/seo.png" class="img-comp" alt="Logo SEO">
-                            <img src="asset/image/photoshop.png" class="img-comp" alt="Logo Photoshop">
                             <img src="asset/image/bash_linux.png" class="img-comp" alt="Logo Bash Linux">
                     </div>
                     </div>
@@ -112,7 +119,7 @@
                 <div class="row">
                     <div class="col-12">
                         <ul class="liste-formation">
-                            <p><img src="asset/image/anssi.png" class="img-exp">MOOC Cybersécurité | Avril 2021<p class="second-texte-exp">En ligne, ANSSI</p></p>
+                            <p><img src="asset/image/cap.jpg" class="img-exp">Licence pro Applications Web RTAI | 2023 - 2024<p class="second-texte-exp">Université Toulouse Capitole, Toulouse</p></p>
                             <div class="barre-jaune"></div>
                             <p><img src="asset/image/univ_angers.jpg" class="img-exp">Licence pro Logiciels Libres | 2020 - 2021 (Niveau)<p class="second-texte-exp">Faculté des sciences, Angers</p></p>
                             <div class="barre-jaune"></div>
@@ -160,25 +167,25 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-6 col-xs-12 card-space">
-                            <a href="https://github.com/Bastien-Meziere/BMD-Drive-LOCAL" target="_blank">
+                            <a href="https://github.com/Bastien-Meziere/cv-bastien-sass" target="_blank">
                             <div class="card">
                                 <div class="imgBx">
-                                    <img src="asset/image/bmd.png" alt="Projet Site Web BMD Drive">
+                                    <img src="asset/image/site-sass.png" alt="Projet Site Web sous SASS">
                                 </div>
                                 <div class="details">
-                                    <h2>Site Web BMD Drive</h2>
+                                    <h2>Site Web SASS</h2>
                                 </div>
                             </div>
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-6 col-xs-12 card-space">
-                            <a href="https://github.com/Bastien-Meziere/FastQuiz" target="_blank">
+                            <a href="https://github.com/Bastien-Meziere/hifi" target="_blank">
                             <div class="card">
                                 <div class="imgBx">
-                                    <img src="asset/image/fastquiz.png" alt="Projet vide">
+                                    <img src="asset/image/laravel-hifi.png" alt="Projet Université Hi-Fi Laravel">
                                 </div>
                                 <div class="details">
-                                    <h2>Appli mobile FastQuiz</h2>
+                                    <h2>Site Web Laravel</h2>
                                 </div>
                             </div>
                             </a>
@@ -196,13 +203,13 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-6 col-xs-12 card-space">
-                            <a href="">
+                            <a href="https://www.figma.com/file/sxereNITuQmKFvijxDlDb7/Portfolio?type=design&node-id=0%3A1&mode=design&t=KtqdNpzGMMfu8n6o-1" target="_blank">
                             <div class="card">
                                 <div class="imgBx">
-                                    <img src="asset/image/blanc.png" alt="Projet vide">
+                                    <img src="asset/image/figma-portfolio.png" alt="Maquette Figma de mon portfolio">
                                 </div>
                                 <div class="details">
-                                    <h2></h2>
+                                    <h2>Maquette Figma Portfolio</h2>
                                 </div>
                             </div>
                             </a>
@@ -227,11 +234,11 @@
         <section id="contact" class="section-contact">
             <div class="container">
                     <h2 class="titresection block_title">Me Contacter</h2>
-                    <?php if(array_key_exists('success', $_SESSION)): ?>
+                    <!--<?php if(array_key_exists('success', $_SESSION)): ?>
                         <div class="alert succes">
                             Votre message a bien été envoyé
                         </div>
-                    <?php endif; ?>
+                    <?php endif; ?>-->
                     <form class="row" method="POST" action="mail/contact.php">
                         <div class="col-md-12">
                             <input id="nom" class="form-control input-nom" type="text" placeholder="Nom" required>
@@ -245,7 +252,7 @@
                         <div class="col-md-12">
                             <textarea id="message" class="form-control input-reste" placeholder="Message" required></textarea>
                         </div>
-                            <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
+                            <!--<input type="hidden" id="recaptchaResponse" name="recaptcha-response">-->
                         <div class="col-xs-12">
                             <button id="submit" type="submit" class="boutoncontact"><span>Envoyer</span></button>
                         </div>
@@ -273,6 +280,3 @@
     </body>
 
 </html>
-<?php
-  unset($_SESSION['success']);
-?>
