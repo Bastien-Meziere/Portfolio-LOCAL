@@ -457,8 +457,8 @@ tr {
 }
 
 .img-exp {
-    width: 20vh;
-    height: 10vh;
+    width: 30vh;
+    height: 15vh;
     text-align: center;
     border: 5px solid var(--bordeaux);
     border-radius: 5px;
